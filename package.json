@@ -1,0 +1,63 @@
+{
+  "name": "@yanluo/vue-popper",
+  "version": "0.0.1",
+  "description": "vue popover component based on popper.js",
+  "main": "./lib/vue-popper.min.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "lib": "webpack --config webpack.lib.js"
+  },
+  "keywords": [
+    "vue",
+    "component",
+    "popper"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whu-luojian/vue-popper"
+  },
+  "author": "whu-luojian",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.4.2",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.1.2",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^4.2.3",
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0",
+    "style-loader": "^1.1.3",
+    "stylelint": "^13.2.0",
+    "vue-loader": "^15.9.0",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "element-resize-detector": "^1.2.1",
+    "popper.js": "^1.16.1",
+    "v-click-outside-x": "^4.1.0",
+    "vue": "^2.6.11"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
